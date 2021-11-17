@@ -13,6 +13,7 @@
 		91ACD2C727452694006A4EF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91ACD2C527452694006A4EF5 /* Main.storyboard */; };
 		91ACD2C927452699006A4EF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91ACD2C827452699006A4EF5 /* Assets.xcassets */; };
 		91ACD2CC27452699006A4EF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91ACD2CA27452699006A4EF5 /* LaunchScreen.storyboard */; };
+		91ACD2D427453353006A4EF5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91ACD2D327453353006A4EF5 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		91ACD2C827452699006A4EF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91ACD2CB27452699006A4EF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		91ACD2CD27452699006A4EF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91ACD2D327453353006A4EF5 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				91ACD2C827452699006A4EF5 /* Assets.xcassets */,
 				91ACD2CA27452699006A4EF5 /* LaunchScreen.storyboard */,
 				91ACD2CD27452699006A4EF5 /* Info.plist */,
+				91ACD2D327453353006A4EF5 /* DetailViewController.swift */,
 			);
 			path = Medicine;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				91ACD2C427452694006A4EF5 /* ViewController.swift in Sources */,
 				91ACD2C027452694006A4EF5 /* AppDelegate.swift in Sources */,
 				91ACD2C227452694006A4EF5 /* SceneDelegate.swift in Sources */,
+				91ACD2D427453353006A4EF5 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,27 +7,28 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UITableViewController {
+    
+    var medicineArray: [String] = []
 
-    @IBOutlet weak var imageView: UIImageView!
+    @IBAction func addButton(_ sender: UIBarButtonItem) {
+        medicineArray += ["New item added here"]
+        tableView.reloadData()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        title = "My medicine"
     }
 
-    @IBAction func helloButton(_ sender: UIButton) {
-        let x = Int.random(in: 0...3)
-        var colour: UIColor = .systemRed
-        
-        switch x {
-        case 0: colour = .systemBlue
-        case 1: colour = .systemRed
-        case 2: colour = .systemGray
-        case 3: colour = .systemGreen
-        default: colour = .systemRed
-        }
-        imageView.backgroundColor = colour
+    override func numberOfSections(in tableView: UITableView) -> Int { 1 }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int { medicineArray.count }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.textLabel?.text = medicineArray[indexPath.row]
+        return cell
     }
     
 }
