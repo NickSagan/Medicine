@@ -17,6 +17,17 @@ class ViewController: UIViewController {
     }
 
     @IBAction func helloButton(_ sender: UIButton) {
+        let x = Int.random(in: 0...3)
+        var colour: UIColor = .systemRed
+        
+        switch x {
+        case 0: colour = .systemBlue
+        case 1: colour = .systemRed
+        case 2: colour = .systemGray
+        case 3: colour = .systemGreen
+        default: colour = .systemRed
+        }
+        imageView.backgroundColor = colour
     }
     
 }
